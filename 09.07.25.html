@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="09.07.25.css">
+</head>
+<body>
+  <h1>this is js</h1>
+
+  <div id="container">This is container</div>
+
+  <div id="grandparent">
+    <div id="parent">
+      <div id="child"></div>
+    </div>
+  </div>
+
+  <!-- instead of applying an event listener on all list items, one event listener is applied on entire ul tag -->
+
+  <div id="mainContainer">
+    <ul id="navbar">
+      <li>Home</li>
+      <li>Products</li>
+      <li>Login</li>
+      <li>Logout</li>
+    </ul>
+  </div>
+
+  <!-- 
+    script → Script tag should be placed in the body; it blocks HTML parsing until it loads and runs.
+    script async → HTML parsing continues while script loads, but pauses when the script is ready to run.
+    script defer → Script loads in parallel and runs only after the entire HTML is parsed.
+  -->
+  <script src="09.07.25.js"></script>
+</body>
+</html>
